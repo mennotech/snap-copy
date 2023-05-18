@@ -1,0 +1,14 @@
+{
+    "destinationPath": "\\\\hostname\\share\\path or D:\\localpath",
+    "sourceDrive": "C:",
+    "sourcePath": "LocalFolder\\local", 
+    "maxShadowCopies": 0,
+    "mail" : {
+        "sendOnSuccess" : false,
+        "sendOnFailure" : true,
+        "smtpServer" : "mail.server.com",
+        "sender" : "Name <email@address.com",
+        "recipients" : "email@address.com,email2@address.com",
+        "subject" : "Snap-Copy Results on server.com"
+    }
+}
