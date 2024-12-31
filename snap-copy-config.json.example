@@ -3,6 +3,7 @@
     "sourceDrive": "C:",
     "sourcePath": "LocalFolder\\local", 
     "maxShadowCopies": 0,
+    "syncDrive": "D:",
     "mail" : {
         "sendOnSuccess" : false,
         "sendOnFailure" : true,

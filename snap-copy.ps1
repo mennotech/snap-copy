@@ -39,6 +39,12 @@ function Main {
   #Delete Snapshot
   $result = Remove-Snapshot $newSnap
 
+  #Sync Disk
+  if ($settings.syncDrive) {
+    Write-Log "Flushing cached data to disk for drive $($settings.syncDrive)"
+    & $PSScriptRoot\bin\sync64.exe -accepteula -r $settings.syncDrive
+  }
+
   #Write to log file if removing the snapshot failed
   if (!($result)) {
     Write-Log "Failed to delete snapshot $newSnap"
